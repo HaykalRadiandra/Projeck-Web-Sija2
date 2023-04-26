@@ -528,3 +528,157 @@ main .container .right{
     display: flex;
     gap: 1rem;
 }
+
+/* =================== THEME CUSTOMIZATION =================== */
+.customize-theme{
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.customize-theme .card{
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 100%;
+}
+
+/* ----------- FONTS SIZES ----------- */
+.customize-theme .font-size{
+    margin-top: 2rem;
+}
+
+.customize-theme .font-size > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+}
+
+.customize-theme .choose-size{
+    background: var(--color-secondary);
+    height: 0.3rem;
+    width: 100%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customize-theme .choose-size span{
+    height: 1rem;
+    width: 1rem;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customize-theme .choose-size .active{
+    background: var(--color-primary);
+}
+
+/* ----------- BUTTON COLORS ----------- */
+.customize-theme .color{
+    margin-top: 2rem;
+}
+
+.customize-theme .color .choose-color{
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customize-theme .color .choose-color span{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+
+.customize-theme .color .choose-color span:nth-child(1){
+    background: hsl(252, 75%, 60%);
+}
+
+.customize-theme .color .choose-color span:nth-child(2){
+    background: hsl(52, 75%, 60%);
+}
+
+.customize-theme .color .choose-color span:nth-child(3){
+    background: hsl(352, 75%, 60%);
+}
+
+.customize-theme .color .choose-color span:nth-child(4){
+    background: hsl(152, 75%, 60%);
+}
+
+.customize-theme .color .choose-color span:nth-child(5){
+    background: hsl(202, 75%, 60%);
+}
+
+.customize-theme .choose-color span.active{
+    border: 5px solid white;
+}
+
+/* ----------- BACKGROUND COLORS ----------- */
+.customize-theme .background{
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.customize-theme .choose-bg > div{
+    padding: var(--card-padding);
+    background: var(--color-secondary);
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.customize-theme .choose-bg > div.active{
+    border: 2px solid var(--color-primary);
+}
+
+.customize-theme .choose-bg .bg-1{
+    background: white;
+    color: black;
+}
+
+.customize-theme .choose-bg .bg-2{
+    background: hsl(252, 30%, 17%);
+    color: white;
+}
+
+.customize-theme .choose-bg .bg-3{
+    background: hsl(252, 30%, 10%);
+    color: white;
+}
+
+.customize-theme .choose-bg > div span{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
