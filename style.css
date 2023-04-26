@@ -682,3 +682,37 @@ main .container .right{
     border: 2px solid white;
     border-radius: 50%;
 }
+
+/* ============== MEDIA QUERIES SMALL LAPTOPS AND BIG TABLETS ============== */
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 96%;
+    }
+
+    main .container{
+        grid-template-columns: 5rem auto 30vw;
+        gap: 1rem;
+    }
+
+    .left{
+        width: 5rem;
+        z-index: 5;
+    }
+
+    main .container .left .profile {
+        display: none;
+    }
+
+    .sidebar h3{
+        display: none;
+    }
+    
+    .left .btn{
+        display: none;
+    }
+}
+
+/* ============== MEDIA QUERIES SMALL TABLETS AND MOBILE PHONES ============== */
+@media screen and (max-width: 992px) {
+    
+}
