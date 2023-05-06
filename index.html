@@ -20,11 +20,55 @@
             </div>
             <div class="create">
                 <label class="btn btn-primary" for="create-post">Create</label>
-                <div class="profile-photo">
+                <div class="profile-photo" onclick="settingsMenuToggle()">
                     <img src="images/profile-1.jpg" alt="">
                 </div>
             </div>
+            <!-- .........  Settings-menu  ......... -->
+            <div class="settings-menu">
+        
+                <div id="dark-btn" >
+                    <span></span>
+                </div>
+        
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-1.jpg" alt="">
+                        <div>
+                            <p>John Wick</p>
+                            <a href="./images/profile-1.jpg">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>            
+                    <div class="user-profile">
+                        <img src="images/feedback.png" alt="">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div> 
+                    <hr>
+                    <div class="settings-links">
+                        <img src="images/setting.png" alt="" class="settings-icon">
+                        <a href="#">Settings & Privacy<img src="images/arrow.png" alt="" class="arrow"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/help.png" alt="" class="settings-icon">
+                        <a href="#">Help & Support<img src="images/arrow.png" alt="" class="arrow"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/display.png" alt="" class="settings-icon">
+                        <a href="#">Display & Accessibility<img src="images/arrow.png" alt="" class="arrow"></a>
+                    </div>
+                    <div class="settings-links last">
+                        <img src="images/logout.png" alt="" class="settings-icon">
+                        <a href="#">Logout<img src="images/arrow.png" alt="" class="arrow"></a>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        
     </nav>
 
     <!-- ========== ========== MAIN ========== ========== -->
@@ -43,7 +87,7 @@
                 </a>
                 <!-- ------------- SIDEBAR ------------- -->
                 <div class="sidebar">
-                    <a class="menu-item active">
+                    <a href="./index.html" class="menu-item active">
                         <span><i class="fa-solid fa-house"></i></span> <h3>Home</h3>
                     </a>
                     <a class="menu-item">
@@ -141,7 +185,10 @@
                         <div class="profile-photo">
                             <img src="./images/profile-8.jpg" alt="">
                         </div>
-                        <p class="name">Your Story</p>
+                        <div class="upload">
+                            <div class="up"></div>
+                            <p class="ups">Your Story</p>
+                        </div>
                     </div>
                     <div class="story">
                         <div class="profile-photo">

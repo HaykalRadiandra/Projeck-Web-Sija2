@@ -1,3 +1,6 @@
+// NAVBAR
+const settingsMenu = document.querySelector(".settings-menu");
+
 // SIDEBAR
 const menuItems = document.querySelectorAll('.menu-item');
 
@@ -16,6 +19,11 @@ const colorPalette = document.querySelectorAll('.choose-color span');
 const bg1 = document.querySelector('.bg-1');
 const bg2 = document.querySelector('.bg-2');
 const bg3 = document.querySelector('.bg-3');
+
+// ============================= NAVBAR =============================
+function settingsMenuToggle(){
+    settingsMenu.classList.toggle("settings-menu-height");
+}
 
 // ============================= SIDEBAR =============================
 

@@ -135,6 +135,121 @@ nav .create {
     gap: 2rem;
 }
 
+/* Settings-menu */
+.settings-menu {
+    position: absolute;
+    background: var(--color-white);
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    top: 108%;
+    right: 10%;
+    max-height: 0;
+    transition: max-height 0.3s;
+}
+
+.settings-menu-height{
+    max-height: 450px;
+}
+
+.create .profile-photo {
+    cursor: pointer;
+}
+
+.settings-menu .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262; 
+    font-size: 18px;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav .settings-menu hr {
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+
+.settings-links{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.settings-links:hover{
+    opacity: 0.8;
+}
+
+.settings-links .settings-icon{
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.settings-links .arrow{
+    width: 10px;
+}
+
+nav .user-profile a {
+    font-size: 12px;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+nav .settings-menu-inner {
+    padding: 20px;
+}
+
+.settings-links a {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #626262;
+    font-size: 18px;
+}
+
+/* #dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s;
+} */
+
+/* #dark-btn span{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background: #0a0a0a;
+} */
+
+
 /* ============ MAIN ============ */
 main {
     position: relative;
@@ -163,6 +278,10 @@ main .container .left .profile {
     align-items: center;
     column-gap: 1rem;
     width: 100%;
+}
+
+.profile .handle h4 {
+    color: var(--color-primary);
 }
 
 /* --------------------- SIDEBAR --------------------- */
@@ -304,6 +423,7 @@ main .container .left .profile {
     position: relative;
     overflow: hidden;
     align-items: center;
+    text-align: center;
 }
 
 .middle .stories .story::before {
@@ -349,6 +469,34 @@ main .container .left .profile {
     height: 2rem;
     align-self: start;
     border: 3px solid var(--color-primary);
+    margin-left: 0.3rem;
+}
+
+.upload{
+    z-index: 3;
+}
+
+.up{
+    cursor: pointer;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    border: 3px solid var(--color-primary);
+    transition: all 300ms ease;
+}
+
+.up:hover{
+    opacity: 0.8;
+}
+
+.up::before{
+    content: "+";
+    display: block;
 }
 
 /* --------------------- CREATE POST --------------------- */
@@ -731,6 +879,10 @@ main .container .right{
     .customize-theme .card{
         width: 92vw;
     }
+
+    .settings-menu{
+        right: 2%;
+    }
 }
 
 /* ============== MEDIA QUERIES SMALL TABLETS AND MOBILE PHONES ============== */
@@ -789,5 +941,9 @@ main .container .right{
 
     .customize-theme .choose-bg > div span{
         display: none;
+    }
+
+    .settings-menu{
+        right: 1%;
     }
 }
