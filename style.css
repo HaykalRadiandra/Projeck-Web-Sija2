@@ -591,6 +591,30 @@ main .container .right{
     padding: var(--card-padding);
 }
 
+.right .make-group {
+    margin-top: 1rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.right .make-group .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .make-group i {
+    font-size: 1.4rem;
+}
+
+.right .make-group .message{
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
 .right .messages .heading{
     display: flex;
     align-items: center;
@@ -908,6 +932,10 @@ main .container .right{
         position: absolute;
         left: -20rem;
         width: 20rem;
+    }
+
+    .fa-solid{
+        width:  20px;
     }
 
     .left .notifications-popup::before{

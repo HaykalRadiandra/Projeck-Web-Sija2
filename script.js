@@ -10,6 +10,10 @@ const messages = document.querySelector('.messages');
 const message = messages.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search');
 
+// GROUPS
+const groupNotif = document.querySelector('#group');
+const make_group = document.querySelector('.make-group');
+
 //THEME
 const theme = document.querySelector('#theme');
 const themeModal = document.querySelector('.customize-theme')
@@ -71,6 +75,14 @@ messagesNotification.addEventListener('click', () => {
     messagesNotification.querySelector('.notification-count').style.display = 'none';
     setTimeout(() => {
         messages.style.boxShadow = 'none';
+    }, 2000);
+})
+
+// Highlight groups card when group menu item is clicked
+groupNotif.addEventListener('click', () =>{
+    make_group.style.boxShadow = '0 0 1rem var(--color-primary)';
+    setTimeout(() => {
+        make_group.style.boxShadow = 'none';
     }, 2000);
 })
 
