@@ -138,7 +138,6 @@ nav .create {
 /* Settings-menu */
 .settings-menu {
     position: absolute;
-    background: var(--color-white);
     width: 90%;
     max-width: 350px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -166,7 +165,6 @@ nav .create {
 .user-profile p{
     margin-bottom: -5px;
     font-weight: 500;
-    color: #626262; 
     font-size: 18px;
 }
 
@@ -211,6 +209,7 @@ nav .user-profile a {
 
 nav .settings-menu-inner {
     padding: 20px;
+    background: var(--color-white);
 }
 
 .settings-links a {
@@ -219,7 +218,8 @@ nav .settings-menu-inner {
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
-    color: #626262;
+    cursor: pointer;
+    /* color: var(--color-primary); */
     font-size: 18px;
 }
 
@@ -477,26 +477,35 @@ main .container .left .profile {
 }
 
 .up{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.upp{
+    border: 3px solid var(--color-primary);
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    border-radius: 50%;
     background-color: transparent;
-    text-align: center;
-    line-height: 30px;
     font-size: 24px;
-    border: 3px solid var(--color-primary);
     transition: all 300ms ease;
+}
+
+.upp span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .up:hover{
     opacity: 0.8;
-}
-
-.up::before{
-    content: "+";
-    display: block;
 }
 
 /* --------------------- CREATE POST --------------------- */
@@ -527,9 +536,10 @@ main .container .left .profile {
 }
 
 .middle .post-container .add-post-links .post-link a{
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
     align-items: center;
+    color: var(--color-gray);
 }
 
 .add-post-links .post-link{
@@ -546,7 +556,7 @@ main .container .left .profile {
 }
 
 .post-container .add-post-links .post-link a img {
-    width: 30px;
+    width: 22px;
     margin-right: 5px;
 }
 
@@ -633,7 +643,7 @@ main .container .right{
     padding: var(--card-padding);
 }
 
-.right .make-group {
+.right .make-group {    
     margin-top: 1rem;
     background: var(--color-white);
     border-radius: var(--card-border-radius);
@@ -653,8 +663,8 @@ main .container .right{
 
 .right .make-group .message{
     display: flex;
-    gap: 1rem;
-    align-items: start;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .right .messages .heading{
@@ -662,6 +672,10 @@ main .container .right{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+}
+
+.right .make-group .message h5{
+    font-weight: 400;
 }
 
 .right .messages i{
@@ -920,6 +934,10 @@ main .container .right{
         width: 96%;
     }
 
+    .upp span{
+        font-size: 20px;
+    }
+
     main .container{
         grid-template-columns: 5rem auto 30vw;
         gap: 1rem;
@@ -955,6 +973,10 @@ main .container .right{
 @media screen and (max-width: 992px) {
     nav .search-bar{
         display: none;
+    }
+
+    .upp span{
+        font-size: 16px;
     }
 
     main .container {
