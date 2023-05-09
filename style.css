@@ -52,6 +52,13 @@ body {
     margin: 0 auto;
 }
 
+.footer{
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
 .profile-photo {
     width: 2.7rem;
     aspect-ratio: 1/1;
@@ -388,11 +395,11 @@ main .container .left .profile {
     transform: rotate(45deg);
 }
 
-.left .notifications-popup>div {
+.left .notifications-popup > div {
     display: flex;
     align-items: start;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .left .notifications-popup small {
@@ -952,7 +959,7 @@ main .container .right{
         display: none;
     }
 
-    .sidebar h3{
+    main .container .sidebar h3{
         display: none;
     }
     
@@ -967,6 +974,29 @@ main .container .right{
     .settings-menu{
         right: 2%;
     }
+
+    /* ============ MAIN PROFILE ============ */
+    .profile-container{
+        width: 96%;
+    }
+    main .profile-container{
+        grid-template-columns: 10rem auto;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .profile-container .left {
+        margin-left: 1rem;
+    }
+
+    main .profile-container .sidebar h3{
+        display: none;
+    }
+
+    main .profile-container .left .handle{
+        display: none;
+    }
+ 
 }
 
 /* ============== MEDIA QUERIES SMALL TABLETS AND MOBILE PHONES ============== */
@@ -991,7 +1021,7 @@ main .container .right{
         right: 0;
     }
 
-    /* ------------NOTIFICITION POPUP */
+    /* ------------ NOTIFICITION POPUP ------------ */
     .left .notifications-popup{
         position: absolute;
         left: -20rem;
@@ -1038,4 +1068,134 @@ main .container .right{
     .settings-menu{
         right: 1%;
     }
+
+    /* ============ MAIN PROFILE ============ */
+    main .profile-container {
+        grid-template-columns: 0 auto;
+        margin: 0;
+        gap: 0;
+    }
+
+    main .profile-container .left {
+        grid-column: 3/4;
+        position: fixed;
+        margin-right: 0.5rem;
+        bottom: 0;
+        right: 0;
+    }
+
+    main .profile-container .right-profil {
+        grid-column: 1/4;
+        margin: 0 1rem;
+    }
+
+    main .profile-container .handle{
+        display: none;
+    }
+
+}
+/* =========================================================================================================== */
+
+/* ==================================== ========= PROFILE PAGES ==================================== ========= */
+/* ============ MAIN PROFILE ============ */
+.profile-container{
+    width: 80%;
+    margin: 0 auto;
+}
+main .profile-container {
+    display: grid;
+    grid-template-columns: 20vw auto;
+    position: relative;
+    gap: 2rem;
+}
+
+/* ============ ============ LEFT PROFIL ============ ============ */
+main .profile-container .left {
+    height: max-content;
+    /* position: sticky; */
+    top: var(--sticky-top-left);
+}
+
+main .profile-container .left .profile {
+    padding: var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+/* ============ ============ RIGHT PROFIL ============ ============ */
+.main .profile-container .right-profil{
+    width: 100%;
+}
+
+.cover-img{
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    margin-bottom: 1rem;
+}
+
+.profile-details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+}
+
+.pd-row{
+    display: flex;
+    align-items: flex-start;
+}
+
+.pd-images{
+    width: 6.25rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+.pd-row div h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.pd-row div p{
+    font-size: 17px;
+    font-weight: 555;
+}
+
+.pd-row div .liked-by{
+    margin-top: 0.3rem;
+    display: flex;
+}
+
+.pd-row div .liked-by span{
+    width: 1.5rem;    
+    height: 1.5rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-white);
+    margin-left: -0.3rem;   
+}
+
+.pd-row div .liked-by span:first-child{
+    margin: 0;
+}
+
+.pd-right button{
+    background: var(--color-primary);
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: var(--btn-padding);
+    margin-left: 10px;
+    cursor: pointer;
 }

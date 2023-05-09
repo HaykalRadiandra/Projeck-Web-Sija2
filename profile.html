@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIJABook - Profile page</title>
+    <script src="https://kit.fontawesome.com/4990f28b73.js" crossorigin="anonymous"></script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== NAV ==================== -->
+    <nav>
+        <div class="container">
+            <h2 class="log">SIJABook</h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for creators, inspirations, and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo" onclick="settingsMenuToggle()">
+                    <img src="images/profile-1.jpg" alt="">
+                </div>
+            </div>
+            <!-- .........  Settings-menu  ......... -->
+            <div class="settings-menu">
+        
+                <div id="dark-btn" >
+                    <span></span>
+                </div>
+        
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-1.jpg" alt="">
+                        <div>
+                            <p>Afifah</p>
+                            <a href="./index.html">Back to Home</a>
+                        </div>
+                    </div>
+                    <hr>            
+                    <div class="user-profile">
+                        <img src="images/feedback.png" alt="">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div> 
+                    <hr>
+                    <div class="settings-links">
+                        <img src="images/setting.png" alt="" class="settings-icon">
+                        <a>
+                            Settings & Privacy
+                            <img src="images/arrow.png" alt="" class="arrow">
+                        </a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/help.png" alt="" class="settings-icon">
+                        <a>Help & Support<img src="images/arrow.png" alt="" class="arrow"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/display.png" alt="" class="settings-icon">
+                        <a>Display & Accessibility<img src="images/arrow.png" alt="" class="arrow"></a>
+                    </div>
+                    <div class="settings-links last">
+                        <img src="images/logout.png" alt="" class="settings-icon">
+                        <a>Logout<img src="images/arrow.png" alt="" class="arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </nav>
+
+    <!-- ========== ========== MAIN ========== ========== -->
+    <main>
+        <div class="profile-container">
+            <!-- ------------------- MAIN LEFT ------------------- -->
+            <div class="left">
+                <a href="#" class="profile">
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>Afifah</h4>
+                        <p class="text-muted">@afifah</p>
+                    </div>
+                </a>
+                <!-- ------------- SIDEBAR ------------- -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span> <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-regular fa-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="fa-regular fa-bell"><small class="notification-count">9+</small></i></span> <h3>Notifications</h3>
+                        <!-- NOTIFICATION POPUP -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Keke Benjamin</b> accepted yout friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>John Doe</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-4.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>John Doe</b> commented on your post
+                                    <small class="text-muted">4 MINUTES</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-5.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>John Doe</b> commented on your post
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-6.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Johny</b> commented on a post you are tagged in
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-7.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>John Doe</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- NOTIFICATION POPUP -->
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="fa-regular fa-message"><small class="notification-count">6</small></i></span> <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-regular fa-bookmark"></i></span> <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item" id="group">
+                        <span><i class="fa-solid fa-group-arrows-rotate"></i></span> <h3>Groups</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="fa-solid fa-palette"></i></span> <h3>Themes</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-gear"></i></span> <h3>Settings</h3>
+                    </a>
+                </div>
+                <!-- END OF SIDEBAR -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+            <!-- ------------------- END OF LEFT ------------------- -->
+
+
+
+            <!-- ------------------- MAIN MIDDLE ------------------- -->
+            <div class="right-profil">
+                
+                <img src="images/cover.png" alt="" class="cover-img">
+        
+                <div class="profile-details">
+                    <div class="pd-left">
+                        <div class="pd-row">
+                            <div class="pd-images">
+                                <img src="images/profile-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>Jack Nicholson</h3>
+                                <p class="text-muted">1,7 rb Friends - 20 mutual</p>
+                                <div class="liked-by">
+                                    <span>
+                                        <img src="images/member-1.png" alt="">
+                                    </span>
+                                    <span>
+                                        <img src="images/member-2.png" alt="">
+                                    </span>
+                                    <span>
+                                        <img src="images/member-3.png" alt="">
+                                    </span>
+                                    <span>
+                                        <img src="images/member-4.png" alt="">
+                                    </span>
+                                    <span>
+                                        <img src="images/member-5.png" alt="">
+                                    </span>
+                                    <span>
+                                        <img src="images/member-7.png" alt="">
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pd-right">
+        
+                        <button type="button"><img src="images/add-friends.png" alt="">Friends</button>
+                        <button type="button"><img src="images/message.png" alt="">Message</button>
+                        <br>
+                        <a href=""><img src="images/more.png" alt=""></a>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- -------------------------------------- THEME CUSTOMIZATION -------------------------------------- -->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize Your View</h2>
+            <p class="text-muted">Manage your font size, color, and background.</p>
+
+            <!-- ----------- FONT SIZES ----------- -->
+            <div class="font-size">
+                <h4 class="text-muted">Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!-- ----------- PRIMARY COLORS ----------- -->
+            <div class="color">
+                <h4 class="text-muted">Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- ----------- BACKGROUND COLORS  ----------- -->
+            <div class="background">
+                <h4 class="text-muted">Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5>Light</h5>                    
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Purple</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5>Dark</h5>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-profile.js"></script>
+    
+</body>
+</html>
