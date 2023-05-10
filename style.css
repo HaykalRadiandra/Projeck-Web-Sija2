@@ -976,10 +976,8 @@ main .container .right{
     }
 
     /* ============ MAIN PROFILE ============ */
-    .profile-container{
-        width: 96%;
-    }
     main .profile-container{
+        width: 98%;
         grid-template-columns: 10rem auto;
         margin: 0;
         gap: 1rem;
@@ -989,11 +987,11 @@ main .container .right{
         margin-left: 1rem;
     }
 
-    main .profile-container .sidebar h3{
-        display: none;
+    main .profile-container .left .profile{
+        display: none !important;
     }
 
-    main .profile-container .left .handle{
+    main .profile-container .sidebar h3{
         display: none;
     }
  
@@ -1079,18 +1077,14 @@ main .container .right{
     main .profile-container .left {
         grid-column: 3/4;
         position: fixed;
-        margin-right: 0.5rem;
+        /* margin-right: 0.5rem; */
         bottom: 0;
         right: 0;
     }
 
     main .profile-container .right-profil {
         grid-column: 1/4;
-        margin: 0 1rem;
-    }
-
-    main .profile-container .handle{
-        display: none;
+        margin: 0 0.6rem;
     }
 
 }
@@ -1098,6 +1092,7 @@ main .container .right{
 
 /* ==================================== ========= PROFILE PAGES ==================================== ========= */
 /* ============ MAIN PROFILE ============ */
+
 .profile-container{
     width: 80%;
     margin: 0 auto;
@@ -1105,9 +1100,10 @@ main .container .right{
 main .profile-container {
     display: grid;
     grid-template-columns: 20vw auto;
-    position: relative;
     gap: 2rem;
+    position: relative;
 }
+
 
 /* ============ ============ LEFT PROFIL ============ ============ */
 main .profile-container .left {
@@ -1187,6 +1183,22 @@ main .profile-container .left .profile {
     margin: 0;
 }
 
+.pd-right{
+    width: 24%;
+    position: relative;
+}
+
+.pd-right .btn-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.pd-right div i{
+    margin-right: 0.4rem;
+}
+
 .pd-right button{
     background: var(--color-primary);
     border: 0;
@@ -1195,7 +1207,206 @@ main .profile-container .left .profile {
     display: inline-flex;
     align-items: center;
     color: #fff;
-    border-radius: var(--btn-padding);
-    margin-left: 10px;
+    border-radius: 30px;
     cursor: pointer;
+}
+
+.pd-right .ellip div{
+    width: 35px;
+    height: 25px;
+    border-radius: 5px;
+    background: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.pd-right .fa-ellipsis{
+    margin-right: 2px;
+    color: var(--color-dark);
+}
+
+/* ==== PROFILE INFO ==== */
+
+.profile-info{
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* INFO COL */
+
+.info-col{
+    flex-basis: 33%;
+}
+
+
+.profile-intro{
+    background: var(--color-white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--card-border-radius);
+}
+
+.profile-intro h3 {
+    font-weight: 600;
+}
+
+.intro-text{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.intro-text img{
+    width: 15px;
+    margin-bottom: -3px;
+}
+
+.profile-intro hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 24px 0;
+}
+
+.profile-intro ul li{
+    list-style: none;
+    font-size: 15px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.profile-intro ul li img{
+    width: 26px;
+    margin-right: 10px;
+}
+
+.tittle-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tittle-box a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 14px;
+}
+
+.photo-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+.photo-box div img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.friends-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+.friends-box div img {
+    width: 100%;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.profile-intro p{
+    font-size: 14px;
+}
+
+.friends-box div{
+    position: relative;
+}
+
+.friends-box div p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* POST-COL */
+
+.post-col{
+    flex-basis: 65%;
+}
+
+.write-post-container{
+    width: 100%;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: 20px;
+    /* color: var(--color-primary); */
+}
+
+.post-profile{
+    display: flex;
+    align-items: center;
+}
+
+
+.post-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-profile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+}
+
+.post-profile small{
+    font-size: 12px;
+    color: var(--color-primary);
+}
+
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+
+.add-post-links{
+    display: flex;
+    margin-top: 10px;
+}
+
+.add-post-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--color-gray);
+    margin-right: 30px;
+    font-size: 13px;
+    transition: all 300ms ease;
+}
+
+.add-post-links a:hover{
+    opacity: 0.8;
+}
+
+.add-post-links a img{
+    width: 20px;
+    margin-right: 10px;
 }
