@@ -994,6 +994,7 @@ main .container .right{
     main .profile-container .sidebar h3{
         display: none;
     }
+
  
 }
 
@@ -1071,20 +1072,60 @@ main .container .right{
     main .profile-container {
         grid-template-columns: 0 auto;
         margin: 0;
+        padding: 0;
         gap: 0;
     }
 
     main .profile-container .left {
         grid-column: 3/4;
         position: fixed;
-        /* margin-right: 0.5rem; */
         bottom: 0;
         right: 0;
     }
 
     main .profile-container .right-profil {
         grid-column: 1/4;
-        margin: 0 0.6rem;
+        margin: 0 5rem 0 0.6rem;
+    }
+
+    .profile-container{
+        padding: 0 4%;
+    }
+    .profile-details{
+        flex-wrap: wrap;
+    }
+    .pd-right{
+        margin-top: 1rem;
+        width: 40% !important;
+        text-align: left;
+        margin-left: 67px;
+    }
+
+    .pd-right .ellip div{
+        top: 1px;
+        left: 10rem;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .pd-right button{
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .pd-row div h3{
+        font-size: 16px !important;
+    }
+    .profile-info{
+        flex-wrap: wrap;
+    }
+    .post-col{
+        flex-basis: 100% !important;
+    }
+
+    .info-col{
+        flex-basis: 100% !important;
     }
 
 }
@@ -1184,13 +1225,19 @@ main .profile-container .left .profile {
 }
 
 .pd-right{
-    width: 24%;
+    width: 100%;
     position: relative;
+}
+
+.pd-right button:first-child{
+    background: var(--color-secondary);
+    color: var(--color-black);
+    margin-right: 10px;
 }
 
 .pd-right .btn-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     position: relative;
 }
@@ -1221,11 +1268,13 @@ main .profile-container .left .profile {
     align-items: center;
     position: absolute;
     right: 0;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 .pd-right .fa-ellipsis{
     margin-right: 2px;
-    color: var(--color-dark);
+    color: var(--color-black);
 }
 
 /* ==== PROFILE INFO ==== */
@@ -1409,4 +1458,65 @@ main .profile-container .left .profile {
 .add-post-links a img{
     width: 20px;
     margin-right: 10px;
+}
+
+.profile-info .feeds .feed{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.profile-info .feed .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-info .feed .user{
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-info .feed .photo{
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: 0.7rem 0;
+}
+
+.profile-info .feed .action-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0.6rem;
+}
+
+.profile-info .liked-by{
+    display: flex;
+    /* margin-left: 0.5rem; */
+}
+
+.profile-info .liked-by span{
+    width: 1.4rem;    
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-white);
+    margin-left: -0.6rem;
+}
+
+.profile-info .liked-by span:first-child{
+    margin: 0;
+}
+
+.profile-info .liked-by p{
+    margin-left: 0.5rem;
+}
+
+.profile-intro ul li i {
+    font-size: 20px;
+    margin-right: 1rem;
 }
