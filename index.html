@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/fakeLoader.css"> -->
 </head>
 <body>
     <!-- ==================== NAV ==================== -->
@@ -779,7 +780,19 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-    
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fakeLoader.js"></script>
+    <div class="fakeLoader"></div>
+
+    <script>
+        $(document).ready(function () {
+            $.fakeLoader({
+                bgColor: 'hsl(252, 15%, 65%, 0.5)',
+                spinner:"spinner3",
+            });
+        });
+    </script>
+
 </body>
 </html>
