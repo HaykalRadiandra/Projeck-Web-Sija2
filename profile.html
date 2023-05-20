@@ -7,7 +7,7 @@
     <title>SIJABook - Profile page</title>
     <script src="https://kit.fontawesome.com/4990f28b73.js" crossorigin="anonymous"></script>
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
     <!-- ==================== NAV ==================== -->
@@ -34,7 +34,7 @@
                 <div class="settings-menu-inner">
                     <div class="user-profile">
                         <img src="images/profile-1.jpg" alt="">
-                        <div>
+                        <div class="first">
                             <p>Afifah</p>
                             <a href="./index.html">Back to Home</a>
                         </div>
@@ -76,112 +76,18 @@
 
     <!-- ========== ========== MAIN ========== ========== -->
     <main>
-        <div class="profile-container">
-            <!-- ------------------- MAIN LEFT ------------------- -->
-            <div class="left">
-                <a href="#" class="profile">
-                    <div class="profile-photo">
-                        <img src="images/profile-1.jpg" alt="">
-                    </div>
-                    <div class="handle">
-                        <h4>Afifah</h4>
-                        <p class="text-muted">@afifah</p>
-                    </div>
+        <!-- ------------------- THEMES ------------------- -->
+        <div class="theme">
+            <div class="sidebar">
+                <a class="menu-item active" id="theme">
+                    <i class="fa-solid fa-palette"></i>
                 </a>
-                <!-- ------------- SIDEBAR ------------- -->
-                <div class="sidebar">
-                    <a class="menu-item active">
-                        <span><i class="fa-solid fa-house"></i></span> <h3>Home</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="fa-regular fa-compass"></i></span> <h3>Explore</h3>
-                    </a>
-                    <a class="menu-item" id="notifications">
-                        <span><i class="fa-regular fa-bell"><small class="notification-count">9+</small></i></span> <h3>Notifications</h3>
-                        <!-- NOTIFICATION POPUP -->
-                        <div class="notifications-popup">
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="images/profile-2.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Keke Benjamin</b> accepted yout friend request
-                                    <small class="text-muted">2 DAYS AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="images/profile-3.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>John Doe</b> commented on your post
-                                    <small class="text-muted">1 HOUR AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="images/profile-4.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>John Doe</b> commented on your post
-                                    <small class="text-muted">4 MINUTES</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="images/profile-5.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>John Doe</b> commented on your post
-                                    <small class="text-muted">2 DAYS AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="images/profile-6.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Johny</b> commented on a post you are tagged in
-                                    <small class="text-muted">1 HOUR AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="images/profile-7.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>John Doe</b> commented on your post
-                                    <small class="text-muted">1 HOUR AGO</small>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- NOTIFICATION POPUP -->
-                    </a>
-                    <a class="menu-item" id="messages-notifications">
-                        <span><i class="fa-regular fa-message"><small class="notification-count">6</small></i></span> <h3>Messages</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="fa-regular fa-bookmark"></i></span> <h3>Bookmarks</h3>
-                    </a>
-                    <a class="menu-item" id="group">
-                        <span><i class="fa-solid fa-group-arrows-rotate"></i></span> <h3>Groups</h3>
-                    </a>
-                    <a class="menu-item" id="theme">
-                        <span><i class="fa-solid fa-palette"></i></span> <h3>Themes</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="fa-solid fa-gear"></i></span> <h3>Settings</h3>
-                    </a>
-                </div>
-                <!-- END OF SIDEBAR -->
-                <label for="create-post" class="btn btn-primary">Create Post</label>
             </div>
-            <!-- ------------------- END OF LEFT ------------------- -->
-
-
-
+        </div>
+        <div class="profile-container">
+            
             <!-- ------------------- MAIN MIDDLE ------------------- -->
-            <div class="right-profil">
+            <div class="middle container">
                 
                 <img src="images/cover.png" alt="" class="cover-img">
         
@@ -192,7 +98,7 @@
                                 <img src="images/profile-1.jpg" alt="">
                             </div>
                             <div>
-                                <h3>Jack Nicholson</h3>
+                                <h3>Afifah Nurul Okta</h3>
                                 <p class="text-muted">1,7 rb Friends - 20 mutual</p>
                                 <div class="liked-by">
                                     <span>
@@ -220,8 +126,8 @@
                     </div>
                     <div class="pd-right">
                         <div class="btn-1">
-                            <button type="button"><i class="fa-solid fa-user-plus"></i>Friends</button>
-                            <button type="button"><i class="fa-solid fa-message"></i>Message</button>
+                            <button type="button"><i class="fa-solid fa-user-plus"></i><p>Friends</p></button>
+                            <button type="button"><i class="fa-solid fa-message"></i><p>Message</p></button>
                         </div>
                         <div class="ellip">
                             <div>
@@ -272,15 +178,33 @@
                             </div>
                             <p>120 (10 mutual)</p>
                             <div class="friends-box">
-                                <div><img src="images/member-1.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-2.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-3.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-4.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-5.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-6.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-7.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-8.png" alt=""><p>Bembem</p></div>
-                                <div><img src="images/member-9.png" alt=""><p>Bembem</p></div>
+                                <div><img src="images/member-1.png" alt=""><p>Lorem</p></div>
+                                <div><img src="images/member-2.png" alt=""><p>Ipsum</p></div>
+                                <div><img src="images/member-3.png" alt=""><p>Dolor</p></div>
+                                <div><img src="images/member-4.png" alt=""><p>Sit</p></div>
+                                <div><img src="images/member-5.png" alt=""><p>Amet</p></div>
+                                <div><img src="images/profile-4.jpg" alt=""><p>Consectetur</p></div>
+                                <div><img src="images/member-7.png" alt=""><p>Adipisicing</p></div>
+                                <div><img src="images/member-8.png" alt=""><p>Elit</p></div>
+                                <div><img src="images/member-9.png" alt=""><p>Tempora</p></div>
+                            </div>
+                        </div>
+
+                        <div class="foot">
+                            <div class="foot-1">
+                                <ul>
+                                    <li><a href="#"><span class="text-muted">| About |</span></a></li>
+                                    <li><a href="#"><span class="text-muted">| Help |</span></a></li>
+                                    <li><a href="#"><span class="text-muted">| API |</span></a></li>
+                                    <li><a href="#"><span class="text-muted">| Jobs |</span></a></li>
+                                    <li><a href="#"><span class="text-muted">| Privacy |</span></a></li>
+                                    <li><a href="#"><span class="text-muted">| Locations |</span></a></li>
+                                    <li><a href="#"><span class="text-muted">| Language |</span></a></li>
+                                    <li><a href="#"><span class="text-muted">| SijaBook Verified |</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="foot-2 text-muted">
+                                <span>&copy; 2023 SIJABOOK FROM STEMBA</span>
                             </div>
                         </div>
         
@@ -290,15 +214,15 @@
                     <div class="post-col">
                         <div class="write-post-container">
                             <div class="post-profile">
-                                <img src="images/profile-15.jpg" alt="">
+                                <img src="images/profile-1.jpg" alt="">
                                 <div>
-                                    <p>John Wick</p>
+                                    <p>Afifah</p>
                                     <small>Public <i class="fa-solid fa-caret-down"></i></small>
                                 </div>
                             </div>
             
                             <div class="post-input-container">
-                                <textarea rows="3" placeholder="Apa yang anda pikirkan, John?"></textarea>
+                                <textarea rows="3" placeholder="What do you think, Afifah?"></textarea>
                                 <div class="add-post-links">
                                     <a href="#"><img src="images/live-video.png" alt="">Live Video</a>
                                     <a href="#"><img src="images/photo.png" alt="">Photo/Video</a>
@@ -502,6 +426,20 @@
             </div>
         </div>
     </div>
+
+    <script src="js/script-profile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fakeLoader.js"></script>
+    <div class="fakeLoader"></div>
+
+    <script>
+        $(document).ready(function () {
+            $.fakeLoader({
+                bgColor: 'hsl(252, 15%, 65%, 0.5)',
+                spinner:"spinner3",
+            });
+        });
+    </script>
 
 </body>
 </html>
