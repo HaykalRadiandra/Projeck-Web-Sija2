@@ -39,7 +39,7 @@ body{
     flex-direction: column;
     background: var(--color-light);
     min-height: 100%;
-    margin: 10%;
+    margin: 10% auto;
 }
 
 .container{
@@ -48,7 +48,7 @@ body{
     max-width: 100%;
     min-height: 480px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 14px 28px  rgba(0, 0, 0, 0.25),
                 0 10px 10px  rgba(0, 0, 0, 0.22);
