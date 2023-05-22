@@ -311,9 +311,9 @@ main .theme:hover{
 }
 
 /* ============ ============ MIDDLE ============ ============ */
-.main .profile-container .middle{
-    width: 100%;
-}
+/* .main .profile-container{
+    padding: 80px 15% 20px 15%;
+} */
 
 .cover-img{
     width: 100%;
@@ -882,8 +882,8 @@ main .theme:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        width: 10%;
+        height: 15%;
         left: 1rem;
     }
 
@@ -935,8 +935,18 @@ main .theme:hover{
 
 /* ============== MEDIA QUERIES SMALL TABLETS AND MOBILE PHONES ============== */
 @media screen and (max-width: 768px) {
+    body{
+        overflow-x: auto;
+    }
+
     main{
+        width: 100%;
         margin-top: -0.5rem;
+    }
+
+    main .theme{
+        width: 10%;
+        height: 5%;
     }
 
     nav .container .search-bar input{
@@ -947,9 +957,8 @@ main .theme:hover{
         gap: 0.5rem;
     }
 
-    .profile-container .middle{
-        width: 117%;
-        flex-basis: 100%;
+    .profile-container{
+        width: 170%;
     }
 
     .profile-details{

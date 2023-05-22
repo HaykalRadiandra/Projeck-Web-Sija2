@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SijaBook - Login/out</title>
+    <script src="https://kit.fontawesome.com/4990f28b73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-square-google-plus"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <p>or use your email for registration</p>
+                <input type="text" name="txt" placeholder="Name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="psswd" placeholder="Password" required="">
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <div class="sign-in">
+            <form action="#">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-square-google-plus"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <p>or use your account</p>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="psswd" placeholder="Password" required="">
+                <a href="#" class="text-link">Forget your Password</a>
+                <button> <a href="index.html"> Sign In </a></button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>Welcome Back</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Hello, Friend</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const main = document.getElementById('main');
+
+        signUpButton.addEventListener('click', () =>{
+            main.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () =>{
+            main.classList.remove("right-panel-active");
+        });
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fakeLoader.js"></script>
+    <div class="fakeLoader"></div>
+
+    <script>
+        $(document).ready(function () {
+            $.fakeLoader({
+                bgColor: 'hsl(252, 15%, 65%, 0.5)',
+                spinner:"spinner3",
+            });
+        });
+    </script>
+
+</body>
+</html>
