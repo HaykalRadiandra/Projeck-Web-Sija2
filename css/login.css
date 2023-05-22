@@ -32,7 +32,7 @@
 }
 
 body{
-    padding: 0 0 1.5rem 0;
+    padding: 0 1.5rem 1.5rem 1.5rem;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -236,12 +236,11 @@ button:active{
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 50%;
+    font-size: large;
 }
 
 /* Media query untuk lebar layar <= 768px */
 @media screen and (max-width: 768px) {
-    .container{
-    }
     .overlay-container{
         display: none;
     }

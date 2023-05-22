@@ -94,6 +94,10 @@ img {
     font-weight: 500;
 }
 
+.text-link{
+    color: var(--color-black);
+}
+
 .text-muted {
     color: var(--color-gray);
 }
@@ -883,7 +887,7 @@ main .theme:hover{
         justify-content: center;
         align-items: center;
         width: 10%;
-        height: 15%;
+        height: 10%;
         left: 1rem;
     }
 

@@ -87,6 +87,10 @@ img {
     font-weight: 500;
 }
 
+.text-link{
+    color: var(--color-black);
+}
+
 .text-muted {
     color: var(--color-gray);
 }
