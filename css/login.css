@@ -130,7 +130,7 @@ button{
 }
 
 .text-link{
-    color: #333;
+    color: var(--color-light);
 }
 
 button a{
